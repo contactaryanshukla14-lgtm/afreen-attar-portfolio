@@ -4,6 +4,12 @@
   "private": true,
   "description": "Afreen Attar — CEO, MD Groups. An independent executive portfolio.",
   "type": "module",
-  "scripts": { "dev": "node tools/serve.mjs", "check": "node --check script.js && node tools/check.mjs", "build": "node tools/build.mjs" },
-  "engines": { "node": ">=20" }
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "node --check script.js && node tools/check.mjs",
+    "build": "node tools/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

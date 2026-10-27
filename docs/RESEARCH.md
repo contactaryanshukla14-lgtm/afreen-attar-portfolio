@@ -7,6 +7,7 @@ User-supplied facts: Afreen Attar, CEO of MD Groups; contact.afreenattar@gmail.c
 Reference: https://mohammedadnan.world/ (retrieved as server-rendered HTML). Used only for broad corporate context. Personal technical qualifications, projects, achievements and contact information were not transferred to Afreen.
 
 Corporate primary sources:
+
 - https://mdgroup.world/verticals — 12 business verticals, organised into infrastructure, services and consumer goods. Construction, cement, logistics, traders, import–export, security & facilities, fuel station, gold bullion, pharma chemist, beer factory, agriculture and automobiles. User-facing names are normalised for readability; these are sectors rather than verified subsidiary company names.
 - https://mdgroup.world/presence — 17 named Indian cities. These refer to the company's footprint, not Afreen's residence or individual accomplishments.
 - https://mdgroup.world/about — corporate emphasis on quality, ethics, responsibility, stakeholder relationships and long-term growth.

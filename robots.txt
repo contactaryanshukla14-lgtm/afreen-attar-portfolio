@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://afreen-attar-portfolio.vercel.app/sitemap.xml

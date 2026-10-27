@@ -2,6 +2,10 @@
 
 A custom executive portfolio with portrait-led art direction, an accessible interactive business-sector explorer, responsive navigation and direct email contact.
 
+Live website: https://afreen-attar-portfolio.vercel.app/
+
+Vercel is connected to this repository for automatic deployments from `main`.
+
 ## Run
 
 Requires Node.js 20 or newer. No third-party runtime dependencies.

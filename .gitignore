@@ -4,3 +4,5 @@ dist/
 output/
 assets/afreen-original.png
 .env*
+
+.vercel
