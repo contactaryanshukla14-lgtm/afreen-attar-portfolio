@@ -1,6 +1,6 @@
-# Afreen Attar · CEO, MD Groups
+# Afreen Attar · Founder & CEO, LogiGo
 
-A custom executive portfolio with portrait-led art direction, an accessible interactive business-sector explorer, responsive navigation and direct email contact.
+An independent executive portfolio inspired by LogiGo's visual identity and values: black, electric blue, signal orange, bold typography and accountable transport.
 
 Live website: https://afreen-attar-portfolio.vercel.app/
 
@@ -16,17 +16,17 @@ npm run check
 npm run build
 ```
 
-Development preview: http://127.0.0.1:4173. Production files are generated in `dist/`. Vercel uses the included configuration.
+Preview: http://127.0.0.1:4173. Production files are built into `dist/`.
 
 ## Edit
 
-- `index.html` — biography, page sections and metadata
+- `index.html` — profile, sections and metadata
 - `styles.css` — visual system and responsive layout
-- `script.js` — sector content, accessible interactions and clipboard behaviour
-- `assets/` — optimised images, local fonts and favicon
-- `docs/RESEARCH.md` — primary sources and content provenance
-- `docs/DESIGN.md` — art direction and design rationale
+- `script.js` — accessible service explorer, navigation and clipboard behaviour
+- `assets/` — local images, fonts, licenses and favicon
+- `docs/RESEARCH.md` — content provenance
+- `docs/DESIGN.md` — art direction
 
-Contact is an honest `mailto:` link that opens the visitor's email application; there is no form that pretends to send messages. The copy-email action uses the Clipboard API with a visible fallback. Corporate sources are linked on the page.
+Direct email links open the visitor's email application. The copy-email button has a visible fallback. Company links open https://www.logigo.world/. This portfolio does not present a non-functional booking, tracking or enquiry form.
 
-The Afreen portrait was supplied for this project. Sector photographs are illustrative Unsplash photography. Local font licensing is included with the assets.
+The portrait was supplied for this project. Service photography is illustrative; references and font licensing are documented in the repository.

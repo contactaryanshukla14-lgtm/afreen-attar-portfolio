@@ -6,7 +6,7 @@ const paths = new Set(
   [...html.matchAll(/(?:src|href)="\/(?!\/)([^"?#]+)/g)].map((m) => m[1]),
 );
 for (const path of paths) await access(path);
-for (const name of ["services.webp", "consumer.webp", "outfit-light.ttf"])
+for (const name of ["services.webp", "freight.webp", "plex-mono.ttf"])
   await access(`assets/${name}`);
 const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]));
 for (const [, id] of html.matchAll(/href="#([^"]+)"/g))
@@ -20,3 +20,6 @@ if (!css.includes("prefers-reduced-motion"))
 console.log(
   `Verified ${paths.size} local resources, navigation targets and core metadata.`,
 );
+
+if (/md\s*groups?|mdgroup\.world/i.test(html + js))
+  throw new Error("Unexpected legacy company reference.");

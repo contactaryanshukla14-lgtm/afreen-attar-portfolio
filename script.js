@@ -1,47 +1,49 @@
 "use strict";
 const email = "contact.afreenattar@gmail.com";
 const sectors = {
-  infrastructure: {
-    category: "Foundations for tomorrow",
-    title: ["Shaping the", "world around us."],
+  road: {
+    category: "Road transport",
+    title: ["Built for", "the road ahead."],
     description:
-      "The places we live and the materials we build with. Connecting construction and cement within a shared industrial portfolio.",
-    industries: ["Construction", "Cement industry"],
-    image: "infrastructure.webp",
-    alt: "Looking up through a cluster of modern glass buildings",
-    subject: "Infrastructure partnership enquiry",
-  },
-  services: {
-    category: "Connections that move us forward",
-    title: ["Bringing business", "closer together."],
-    description:
-      "From moving goods to supporting essential operations. A connected portfolio of logistics, trade, facilities and energy services.",
+      "Truck rental, fleet movement and interstate transport. A practical focus on dependable movement and clear communication from collection to delivery.",
     industries: [
-      "Logistics",
-      "Trading",
-      "Import–export",
-      "Security & facilities",
-      "Fuel stations",
+      "Truck rental",
+      "Fleet movement",
+      "Domestic & interstate transport",
+    ],
+    image: "road-network.webp",
+    alt: "An aerial view of connected highway lanes",
+    subject: "Road transport partnership",
+  },
+  freight: {
+    category: "Freight forwarding",
+    title: ["A wider world.", "A clear way forward."],
+    description:
+      "Air and ocean freight, supported by customs brokerage and specialist project cargo. Connecting different modes of transport around the needs of each shipment.",
+    industries: [
+      "Air freight",
+      "Ocean freight",
+      "Customs brokerage",
+      "Project cargo",
+    ],
+    image: "freight.webp",
+    alt: "A cargo vessel representing ocean freight services",
+    subject: "Freight forwarding partnership",
+  },
+  warehousing: {
+    category: "Warehousing & 3PL",
+    title: ["Connected beyond", "the journey."],
+    description:
+      "Storage, pick and pack, distribution and third-party logistics. Bringing the work between transport stages into one connected supply-chain perspective.",
+    industries: [
+      "Storage",
+      "Pick & pack",
+      "Distribution",
+      "Third-party logistics",
     ],
     image: "services.webp",
-    alt: "Industrial logistics and warehouse operations",
-    subject: "Services partnership enquiry",
-  },
-  consumer: {
-    category: "Enterprise in everyday life",
-    title: ["Meeting needs.", "Opening possibilities."],
-    description:
-      "Industries with a place in daily life. A broad portfolio spanning healthcare, agriculture, mobility, precious metals and beverages.",
-    industries: [
-      "Gold bullion",
-      "Pharmaceuticals",
-      "Agriculture",
-      "Automobiles",
-      "Beverages",
-    ],
-    image: "consumer.webp",
-    alt: "Open agricultural fields in soft evening light",
-    subject: "Consumer industries partnership enquiry",
+    alt: "A warehouse with organised storage and logistics operations",
+    subject: "Warehousing and 3PL partnership",
   },
 };
 const tabs = [...document.querySelectorAll('[role="tab"]')];
@@ -49,6 +51,7 @@ const panel = document.querySelector("#sector-panel");
 function selectSector(tab, focus = false) {
   const sector = sectors[tab.dataset.sector];
   if (!sector) return;
+  panel.dataset.service = tab.dataset.sector;
   tabs.forEach((item) => {
     const active = item === tab;
     item.setAttribute("aria-selected", String(active));

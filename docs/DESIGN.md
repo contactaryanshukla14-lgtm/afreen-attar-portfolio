@@ -1,11 +1,13 @@
 # Design direction
 
-Afreen's portrait is the starting point: aubergine tailoring, a gold woven border and a calm executive presence. The site translates those details into a sculptural portrait arch, overlapping AA monogram and large, unhurried typography.
+The brief asks for an independent Afreen Attar portfolio aligned with LogiGo. Its reference language is black, electric blue, orange, large sans-serif type, freight imagery and purposeful movement.
 
-Palette: portrait plum #2b202b, deep plum #221922, woven gold #d8b88a, rose paper #f2eaee, muted rose #e5d7de, mulberry #5e394e.
+Palette: Onyx #111111, electric blue #0016cb, signal orange #ff5500, off-white #f4f4f0, stone #e8e9e4, white #ffffff.
 
-Type: locally hosted Bodoni Moda for expressive display typography, Outfit for readable interface and body copy. Left aligned composition, generous space and differing section structures. The memorable gesture is the large name next to an arched portrait. No decorative ticker, manufactured testimonials or invented achievement counters.
+Type: open-source Space Grotesk for expressive headlines and body copy; IBM Plex Mono for compact navigation context. No licensed fonts were copied from the reference.
 
-Progression: personal introduction → executive profile → interactive group portfolio → leadership agenda → corporate presence → direct contact. The original draft was reviewed against generic portfolio patterns; replaced a proposed repeated card grid with one accessible sector explorer and a typographic city composition. Motion is limited to one introductory entrance and user actions.
+Layout: a large left-aligned name and leadership statement next to a rectangular portrait framed in LogiGo blue; white profile section; an interactive service explorer; a dark leadership section; a blue journey sequence; an orange contact section.
 
-Responsive mobile layout, keyboard tab switching, accessible mobile menu, reduced-motion support, direct email and clipboard fallback are included. All photography and fonts are served locally.
+The original concept was reviewed against generic technology portfolios: decorative dashboards and invented numerical proof were removed. The memorable gesture is the bold executive portrait and name, with a restrained geographic globe in the background. The three journey markers show a sequence, rather than numbering unrelated claims.
+
+The layout respects reduced motion, supports keyboard tab navigation, provides an accessible mobile menu with inert background regions, and serves all assets locally. Source links and service photography context remain visible.
