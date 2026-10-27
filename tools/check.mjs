@@ -1,0 +1,13 @@
+import { readFile, access } from 'node:fs/promises';
+const html = await readFile('index.html', 'utf8');
+const css = await readFile('styles.css', 'utf8');
+const js = await readFile('script.js', 'utf8');
+const paths = new Set([...html.matchAll(/(?:src|href)="\/(?!\/)([^"?#]+)/g)].map(m => m[1]));
+for (const path of paths) await access(path);
+for (const name of ['services.webp', 'consumer.webp', 'outfit-light.ttf']) await access(`assets/${name}`);
+const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
+for (const [, id] of html.matchAll(/href="#([^"]+)"/g)) if (!ids.has(id)) throw new Error(`Missing anchor #${id}`);
+if ((html.match(/<h1\b/g) || []).length !== 1) throw new Error('Expected one primary heading.');
+if (!js.includes('contact.afreenattar@gmail.com')) throw new Error('Missing contact email.');
+if (!css.includes('prefers-reduced-motion')) throw new Error('Missing reduced-motion support.');
+console.log(`Verified ${paths.size} local resources, navigation targets and core metadata.`);

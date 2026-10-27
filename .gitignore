@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vercel/
+output/
+assets/afreen-original.png
+.env*
